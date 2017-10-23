@@ -1,13 +1,18 @@
 .sidebar {
-
     box-sizing: border-box;
     position: fixed;     
     line-height: 5em;
     width: 300px;
     height: 100%;
     font-family: sans-serif;
-    background: #fcfcfb;
     
+}
+
+.title {
+    font-size: 35px;
+    margin: 8px;
+    padding-left: 8px;
+    ;
 }
 
 .sidebar ul {
@@ -17,10 +22,8 @@
     padding: 0;
 }
 
-.title {
-    font-size: 35px;
-    margin: 8px;
-    padding-left: 8px;;
+li {
+    background: #fcfcfb;
 }
 
 li a {
@@ -40,8 +43,12 @@ li a.active {
     color: white;
  }
 
-li a:hover:not(.active) {
-    background-color: rgb(235, 235, 255);
-    color: black;
+
+ul li:first-child a {
+    color: white;
 }
- 
+
+ul li:first-child a:hover {  
+    color: black;
+    background-color: rgb(235, 235, 255);
+}
