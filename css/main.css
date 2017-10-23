@@ -1,22 +1,42 @@
-#sidebar ul {
-    font-family: 'Saira Extra Condensed', sans-serif;
-    font-size: 24px;
+ul {
+    outline: 1px solid turquoise;
     position: fixed;
-    margin-top: 0;
-    margin-left: 0px;
-    width: 200px;
-    outline: 1px solid black;
+    list-style: none;
+    line-height: 5em;
+    width: 400px;
+    margin-left: 1em;
+    padding-left: 0;
+    background: #fcfcfb;
+    font-family: sans-serif;
 }
 
 .title {
-    text-align: left;
-    font-size: 39px;
-    
-    outline: 1px solid green;
-}
-
-li {
-    text-align: left;
-    list-style-type: none;
     outline: 1px solid yellow;
+    font-size: 45px;
+    
 }
+ li {
+     outline: 1px solid green;
+     font-size: 24px;
+     padding-left: 1em;
+     height: 68px;
+     
+ }
+
+a {
+     display: block;
+     text-decoration: none;
+     color: black;
+ }
+
+ a :hover {
+     background-color: rgb(235, 235, 255);
+     color: black;
+ }
+
+ a :active {
+    background-color: rgb(255, 193, 7);
+    color: white;
+ }
+
+ 
