@@ -1,42 +1,51 @@
-ul {
-    outline: 1px solid turquoise;
-    position: fixed;
-    list-style: none;
+.sidebar {
+
+    box-sizing: border-box;
+    position: fixed;     
     line-height: 5em;
-    width: 400px;
-    margin-left: 1em;
-    padding-left: 0;
-    background: #fcfcfb;
+    width: 300px;
+    height: 100%;
     font-family: sans-serif;
+    background: #fcfcfb;
+    
+}
+
+.sidebar ul {
+    list-style-type: none;
+    text-align: left;
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
 }
 
 .title {
-    outline: 1px solid yellow;
-    font-size: 45px;
-    
+    font-size: 35px;
+    margin: 0;
+    padding: 0;
 }
- li {
-     outline: 1px solid green;
-     font-size: 24px;
-     padding-left: 1em;
-     height: 68px;
-     
+li {
+    margin: 0;
+    padding: 0;  
  }
 
-a {
+li a {
      display: block;
      text-decoration: none;
      color: black;
  }
 
- a :hover {
+ li a:hover {
      background-color: rgb(235, 235, 255);
-     color: black;
+     color: white;
  }
 
- a :active {
+li a.active {
     background-color: rgb(255, 193, 7);
     color: white;
  }
 
+li a:hover:not(.active) {
+    background-color: rgb(235, 235, 255);
+    color: black;
+}
  
