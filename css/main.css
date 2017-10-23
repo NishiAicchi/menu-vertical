@@ -1,54 +1,48 @@
-.sidebar {
+.sidebar { /*caja contenedora*/
     box-sizing: border-box;
-    position: fixed;     
-    line-height: 5em;
-    width: 300px;
-    height: 100%;
-    font-family: sans-serif;
+    position: fixed; /*pisicion fijada en relacion al documento*/
+    line-height: 5em;/*reducimos en interlineado del menu*/
+    width: 300px;/*fijamos el ancho*/
+    height: 100%;/*fijamos el alto total*/
+    font-family: 'Saira Extra Condensed',sans-serif; /*definimos un estilo de fondo*/
+    background: #fcfcfb; /*color de fondo de nuestro menú*/
     
 }
 
-.title {
-    font-size: 35px;
-    margin: 8px;
-    padding-left: 8px;
-    ;
+.title { /*encabezado de nuestro menu*/
+    display: block; /*convertimos el encabezado en un elemento de bloque*/
+    font-size: 35px;/*tamaño de la fuente*/
+    margin: 0; /*establecemos el margen*/
+    padding: 10px;
 }
 
-.sidebar ul {
-    list-style-type: none;
-    text-align: left;
-    font-size: 24px;
+.sidebar ul {/*aqui esta el contenido de nuestro menú*/
+    list-style-type: none; /*le quitamos los iconos de listado*/
+    text-align: left; /*alineacion de la fuente*/
+    font-size: 24px; /*tamaño de la fuente*/
     padding: 0;
+    margin: 0;
 }
 
-li {
-    background: #fcfcfb;
-}
 
-li a {
-     display: block;
+li a { /*enlaces de nuestro menú*/
+     display: block; /*convertimos el cuerpo de nuestro menú en un elemento de bloque*/
      padding-left: 8px;
-     text-decoration: none;
+     text-decoration: none; /*le quitamos la decoracion*/
      color: black;
  }
 
- li a:hover {
+ li a:hover { /*aqui le damos un efecto cada vez    que pase nuestro cursor*/
      background-color: rgb(235, 235, 255);
      color: black;
  }
 
-li a.active {
-    background-color: rgb(255, 193, 7);
-    color: white;
- }
-
-
-ul li:first-child a {
-    color: white;
+ul li:first-child a { /*le asignamos a la primera etiqueta*/
+    background-color: rgb(255, 193, 7); /*un nuevo color de fondo*/
+    color: white; /*nuevo color de fuente*/
 }
 
-ul li:first-child a:hover {  
+ul li:first-child a:hover { /*esto le asigna a la primera etiqueta hija de ul, un efecto al pasar nuevamente el cursor sobre ella*/
     color: black;
     background-color: rgb(235, 235, 255);
 }
