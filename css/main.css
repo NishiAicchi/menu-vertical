@@ -1,27 +1,36 @@
-.sidebar { /*caja contenedora*/
-    box-sizing: border-box;
+#sidebar { /*etiqueta contenedora*/
     position: fixed; /*pisicion fijada en relacion al documento*/
-    line-height: 5em;/*reducimos en interlineado del menu*/
+    line-height: 60px;/*reducimos en interlineado del menu*/
     width: 300px;/*fijamos el ancho*/
     height: 100%;/*fijamos el alto total*/
-    font-family: 'Saira Extra Condensed',sans-serif; /*definimos un estilo de fondo*/
-    background: #fcfcfb; /*color de fondo de nuestro menú*/
+    padding: 0;
+    margin: 0;
+    
     
 }
 
 .title { /*encabezado de nuestro menu*/
     display: block; /*convertimos el encabezado en un elemento de bloque*/
+    font-family: 'Saira Extra Condensed',
+    sans-serif;
     font-size: 35px;/*tamaño de la fuente*/
     margin: 0; /*establecemos el margen*/
-    padding: 10px;
+    width: 280px;
+    padding-left: 20px;
+    background: #fcfcfb;
 }
 
-.sidebar ul {/*aqui esta el contenido de nuestro menú*/
-    list-style-type: none; /*le quitamos los iconos de listado*/
-    text-align: left; /*alineacion de la fuente*/
-    font-size: 24px; /*tamaño de la fuente*/
-    padding: 0;
-    margin: 0;
+li {
+     text-align: left;
+     /*alineacion de la fuente*/
+     font-size: 24px;
+     /*tamaño de la fuente*/
+     font-family: 'Saira Extra Condensed',
+     sans-serif;
+     /*definimos un estilo de fondo*/
+     background: #fcfcfb;
+     /*color de fondo de nuestro menú*/
+
 }
 
 
